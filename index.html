@@ -50,7 +50,7 @@
   </div>
 
   <script>
-    fetch("link.txt?t=" + Date.now())
+    fetch("current_tunnel_link.txt?t=" + Date.now())
       .then(r => r.ok ? r.text() : Promise.reject())
       .then(txt => {
         const url = txt.trim();
